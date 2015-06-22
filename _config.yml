@@ -1,14 +1,15 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: U-QASAR Methodology WebBook
+email: hello@uqasar.eu
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The U-QASAR methodology webbook is a practice-oriented overview of a quality assurance,
+  control and measurement methodology that has been developed in the project. The webbook
+  provides background and practical guidelines on quality management of both the software de-
+  velopment process and the software product itself.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: uqasar
+github_username:  u-qasar
 
 # Build settings
 markdown: kramdown
