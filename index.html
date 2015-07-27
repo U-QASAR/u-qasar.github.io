@@ -39,29 +39,18 @@ layout: default
                             <tr>
                                 <th>#</th>
                                 <th>Step</th>
-                                <th>Summary</th>
-                                <th>Attachments</th>
+                                <th>Summary</th>                               
                             </tr>
                         </thead>
                         <tbody>
+                            {% assign steps = site.section1 | sort: 'order' %}
+                            {% for step in steps %}
                             <tr>
-                                <th scope="row">0</th>
-                                <td>Plan the workshop</td>
-                                <td>Review the workflow of the workshop and choose the right steps</td>
-                                <td><i class="fa fa-file-pdf-o"></i> Workflow</td>
+                                <th scope="row">{{ step.order }}</th>
+                                <td><a href="./{{ step.url }}">{{ step.title }}</a></td>
+                                <td>{{ step.summary }}</td>
                             </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Run the workshop</td>
-                                <td>The workshop includes lots of steps and materials!</td>
-                                <td><i class="fa fa-file-archive-o"></i> All</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Add the quality model to U-Qasar</td>
-                                <td>The Online Platform will help you maintain your quality model</td>
-                                <td><i class="fa fa-external-link"></i> Platform</td>
-                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
