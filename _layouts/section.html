@@ -9,7 +9,7 @@ layout: default
         </div>
         <div class="panel-body">
             <p>
-                Short introduction to the contents within
+                {{ page.summary  }}
             </p>
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -21,4 +21,5 @@ layout: default
             </div>
         </div>
     </div>
+    {% include navigation.html %}
 </section>

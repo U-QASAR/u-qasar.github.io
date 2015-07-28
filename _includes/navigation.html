@@ -1,0 +1,19 @@
+{% assign steps = site.section1 | sort: 'order' %}
+{% for step in steps %}
+    {% capture order_prev %}{{ page.order | minus: 1 }}{% endcapture %}
+    {% capture order_next %}{{ page.order | plus: 1 }}{% endcapture %}
+    {% capture order %}{{ step.order }}{% endcapture %}
+    {% if order == order_prev %}
+        {% assign prev = step %}
+    {% endif %}
+    {% if order == order_next %}
+        {% assign next = step %}
+    {% endif %}
+{% endfor %}
+{% if prev %}
+<a href="{{ prev.url }}" class="btn btn-primary">Previous</a>
+{% endif %}
+<a href="/" class="btn btn-info">TOC</a>
+{% if next %}
+<a href="{{ next.url }}" class="btn btn-primary">Next</a>
+{% endif %}

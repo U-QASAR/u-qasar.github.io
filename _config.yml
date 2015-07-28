@@ -16,7 +16,7 @@ defaults:
         path: ""
         type: section1
       values:
-        layout: page
+        layout: section
 # Build settings
 markdown: kramdown
 collections:
