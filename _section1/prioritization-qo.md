@@ -8,4 +8,12 @@ priority: 1
 2. Everyone has equal, fixed number of votes (e.g., 3 or as many votes as there are objectives). 
 3. Everyone can give any number of his or her votes to any objective.
 
-PICTURE of an example objective with post-its and votes.
+<div class="panel panel-default">
+<div class="panel-heading">Picture of an example objective with post-its and votes.
+</div>
+<div class="panel-body">
+<a href="files/u-qasar%20quality%20objectives.jpg"><img src="files/u-qasar%20quality%20objectives-medium.jpg"></a>
+
+</div>
+</div>
+
