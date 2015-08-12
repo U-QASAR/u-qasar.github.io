@@ -20,18 +20,21 @@ layout: default
     </div>
 
 </section>
+
+<h2>Section 1: Planning the Measurement Program</h2>
+{% for part in site.data.section1 %}
 <section>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Section {{  site.data.sections[0].order  }} : {{  site.data.sections[0].title  }}</h3>
+            <h3 class="panel-title">Part 1.{{  part.order  }} : {{  part.title  }}</h3>
         </div>
         <div class="panel-body">
             <p>
-                {{  site.data.sections[0].summary  }}
+                {{  part.summary  }}
             </p>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="panel-title">Section overview</h4>
+                    <h4 class="panel-title">Part overview</h4>
                 </div>
                 <div class="panel-body">
                     <table class="table">
@@ -43,7 +46,14 @@ layout: default
                             </tr>
                         </thead>
                         <tbody>
-                            {% assign steps = site.section1 | sort: 'order' %}
+                            {% assign order = part.order %}       
+                            {% if part.order == 1 %}
+                                {% assign steps = site.part11 | sort: 'order' %}       
+                            {% elsif part.order == 2 %}
+                                {% assign steps = site.part12 | sort: 'order' %}       
+                            {% elsif part.order == 3 %}
+                                {% assign steps = site.part13 | sort: 'order' %}       
+                            {% endif %}
                             {% for step in steps %}
                             <tr>
                                 <th scope="row">{{ step.order }}</th>
@@ -58,52 +68,7 @@ layout: default
         </div>
     </div>
 </section>
-<section>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Section 2: Planning a Measurement Program</h3>
-        </div>
-        <div class="panel-body">
-            <p>
-                Short introduction to the contents within
-            </p>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">Section overview</h4>
-                </div>
-                <div class="panel-body">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Step</th>
-                                <th>Summary</th>
-                                <th>Attachments</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Background on measurements and indicators</td>
-                                <td>Read all you need to know about measurements, automatic or manual, what is best?</td>
-                                <td>ZIP All</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Plan the measurement program</td>
-                                <td>Follow these guidelines to create your measurement program</td>
-                                <td>ZIP All</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Connect your data sources to U-Qasar</td>
-                                <td>The Online Platform will help you update your quality model with its adapters</td>
-                                <td>LINK Platform</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>  
+{% endfor %}
+<h2>Section 2: Controlling the Daily Software Development </h2>
+<h2>Section 3: Driving Process Improvement with Measurements</h2>
+<h2>Section 4: Evolutionary Refinement of the Measurement Program: Examples of Agile and Lean Measurement</h2>
