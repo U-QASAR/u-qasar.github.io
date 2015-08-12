@@ -3,6 +3,7 @@ layout: default
 ---
 
 <section>
+    {% include breadcrumbs.html %}
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Step {{ page.order}} : {{page.title}}</h3>
@@ -13,7 +14,7 @@ layout: default
             </p>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="panel-title">Section details</h4>
+                    <h4 class="panel-title">Details</h4>
                 </div>
                 <div class="panel-body">
                     {{ content }}                    

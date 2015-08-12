@@ -1,4 +1,4 @@
-{% assign steps = site.section1 | sort: 'order' %}
+{% assign steps = site.part11 | sort: 'order' %}
 {% for step in steps %}
     {% capture order_prev %}{{ page.order | minus: 1 }}{% endcapture %}
     {% capture order_next %}{{ page.order | plus: 1 }}{% endcapture %}

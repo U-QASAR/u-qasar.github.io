@@ -1,0 +1,17 @@
+<ul>
+{% for section in site.data.sections %}
+    <li>{{ section.order }}: {{section.title}}</li>
+    <ul>
+        {% if section.order == 1 %}
+        {% assign section_data = site.data.section1 %}       
+        {% elsif section.order == 2 %}
+        {% assign section_data = site.data.section2 %}         
+        {% elsif section.order == 3 %}
+        {% assign section_data = site.data.section3 %}         
+        {% endif %}
+        {% for part in section_data %}
+            <li>{{section.order}}.{{part.order}} {{part.title}}</li>
+        {% endfor %}
+    </ul>
+{% endfor %}    
+</ul>

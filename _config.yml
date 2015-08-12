@@ -14,11 +14,18 @@ github_username:  u-qasar
 defaults:
     - scope:
         path: ""
-        type: section1
       values:
         layout: section
 # Build settings
 markdown: kramdown
 collections:
-    section1:        
+    part11:
+        permalink: /section1/:collection/:title.html
+        url: :permalink
         output: true
+    part12:
+        permalink: /section1/:title.html
+        output: true
+    part13:
+        permalink: /section1/:title.html
+        output: true    
