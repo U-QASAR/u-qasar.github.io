@@ -1,1 +1,33 @@
-{{ site.data.section1.title }}
+{% assign navigation = page.url | remove_first: "/" |split: '/' %}
+{% assign section = navigation[0] %}
+{% assign part = navigation[1] %}
+{% if section == "section1" %}
+    {% assign section_title = site.data.sections[0].title %}
+    {% case part %}
+        {% when "part11" %}
+            {% assign part_title = site.data.section1[0].title %}
+            {% assign part_collection = site.part11 %}
+        {% when "part12" %}
+            {% assign part_title = site.data.section1[1].title %}
+            {% assign part_collection = site.part12 %}
+        {% when "part13" %}
+            {% assign part_title = site.data.section1[2].title %}
+            {% assign part_collection = site.part13 %}
+        {% endcase %}
+{% elsif section == "section2" %}
+    {% assign section_title = site.data.sections[1].title %}
+    {% case part %}
+        {% when "part21" %}
+            {% assign part_title = site.data.section2[0].title %}
+            {% assign part_collection = site.part21 %}
+        {% when "part22" %}
+            {% assign part_title = site.data.section2[1].title %}
+            {% assign part_collection = site.part22 %}
+        {% when "part23" %}
+            {% assign part_title = site.data.section2[2].title %}
+            {% assign part_collection = site.part23 %}
+    {% endcase %}
+{% endif %}
+{{ section_title }} >>
+{{ part_title }}
+

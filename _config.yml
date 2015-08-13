@@ -24,8 +24,8 @@ collections:
         url: :permalink
         output: true
     part12:
-        permalink: /section1/:title.html
+        permalink: /section1/:collection/:title.html
         output: true
     part13:
-        permalink: /section1/:title.html
+        permalink: /section1/:collection/:title.html
         output: true    
