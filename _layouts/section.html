@@ -1,12 +1,32 @@
 ---
 layout: default
 ---
+{% assign navigation = page.url | remove_first: "/" |split: '/' %}
+{% comment %}
+Workaround for splice as it is not working see https://github.com/jekyll/jekyll/issues/3260
+{% endcomment%}
+{% capture section_name %}{{ navigation[0] }}{% endcapture %}
+{% capture part_name %}{{ navigation[1] }}{% endcapture %}
+
+{% assign section_number = navigation[0] | split: '' | last %}
+{% assign part_number = navigation[1] | split: '' | last %}
+
+{% assign section_index = section_number | minus: 1 %}
+{% assign part_index = part_number | minus: 1 %}
+
+{% assign section_title = site.data.sections[section_index].title %}
+
+{% assign this_section_data = site.data.[section_name] %}
+{% assign this_part = this_section_data[part_index] %}
+
+
+{% assign part_collection = site.[part_name] %}
 
 <section>
     {% include breadcrumbs.html %}
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Step {{ page.order}} : {{page.title}}</h3>
+            <h3 class="panel-title">{{ this_part.subparts }} {{ page.order}} : {{page.title}}</h3>
         </div>
         <div class="panel-body">
             <p>
