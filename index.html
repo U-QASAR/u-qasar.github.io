@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
+
 <section>
     <!-- Page content goes here -->
 
     <div class="row">
-        <div class="span12">
+        <div class="col-md-12">
             <section>
                 <div class="page-header">
                     <h2>U-QASAR Methodology Webbook</h2>
@@ -21,12 +22,15 @@ layout: default
 
 </section>
 
-<h2>Section 1: Planning the Measurement Program</h2>
-{% for part in site.data.section1 %}
+{% for section in site.data.sections %}
+<h2>Section {{ section.order }}: {{ section.title }}</h2>
+{% capture this_section %}section{{ section.order }}{% endcapture %}
+{% assign section_data = site.data.[this_section] %}
+{% for part in section_data %}
 <section>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Part 1.{{  part.order  }} : {{  part.title  }}</h3>
+            <h3 class="panel-title">Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</h3>
         </div>
         <div class="panel-body">
             <p>
@@ -41,19 +45,14 @@ layout: default
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Step</th>
+                                <th>{{ part.subparts }}</th>
                                 <th>Summary</th>                               
                             </tr>
                         </thead>
                         <tbody>
-                            {% assign order = part.order %}       
-                            {% if part.order == 1 %}
-                                {% assign steps = site.part11 | sort: 'order' %}       
-                            {% elsif part.order == 2 %}
-                                {% assign steps = site.part12 | sort: 'order' %}       
-                            {% elsif part.order == 3 %}
-                                {% assign steps = site.part13 | sort: 'order' %}       
-                            {% endif %}
+                            {% capture this_part %}part{{ section.order }}{{ part.order }}{% endcapture %}
+                            {% if site.[this_part] %}{% comment %} Remember to define the collection in _config.yml! {% endcomment %}
+                            {% assign steps = site.[this_part] | sort: 'order' %}
                             {% for step in steps %}
                             <tr>
                                 <th scope="row">{{ step.order }}</th>
@@ -61,6 +60,7 @@ layout: default
                                 <td>{{ step.summary }}</td>
                             </tr>
                             {% endfor %}
+                            {% endif %}
                         </tbody>
                     </table>
                 </div>
@@ -69,6 +69,8 @@ layout: default
     </div>
 </section>
 {% endfor %}
+{% endfor %}
+
 <h2>Section 2: Controlling the Daily Software Development </h2>
 <h2>Section 3: Driving Process Improvement with Measurements</h2>
 <h2>Section 4: Evolutionary Refinement of the Measurement Program: Examples of Agile and Lean Measurement</h2>
