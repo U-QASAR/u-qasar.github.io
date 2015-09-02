@@ -8,59 +8,66 @@ layout: default
 <h2>Section {{ section.order }}: {{ section.title }}</h2>
 <h3>Checklist</h3>
 <p>checklist comes here</p>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 {% for part in section_data %}
 <section>
-    <div class="panel panel-default">
+    {% capture this_part %}part{{ section.order }}{{ part.order }}{% endcapture %}
+    <div class="panel panel-default" role="tab" id="header{{ this_part }}">
         <div class="panel-heading">
-            <h3 class="panel-title">Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</h3>
+            <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ this_part }}" aria-expanded="true" aria-controls="{{ this_part }}">Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</a>
+            </h3>
         </div>
-        <div class="panel-body">
-            <p>
-                {{  part.summary  }}
-            </p>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">Guidelines</h4>
-                </div>
-                <div class="panel-body">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Guideline</th>
-                                <th>Description</th>                               
-                            </tr>
-                        </thead>
-                        <tbody>                        
-                            {% assign part_index = part.order | minus: 1 %}
-                            {% if section_data[part_index].guidelines %}
-                            {% assign guidelines = section_data[part_index].guidelines | sort: 'order' %}
-                            {% for guideline in guidelines %}
-                            <tr>
-                                <td>{{ guideline.guideline }}</td>
-                                <td>{{ guideline.description }}</td>
-                            </tr>
-                            {% endfor %}
-                            {% endif %}
-                        </tbody>
-                    </table>
+        <div id="{{ this_part }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header{{ this_part }}">
+            <div class="panel-body">
+                <p>
+                    {{  part.summary  }}
+                </p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Guidelines</h4>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Guideline</th>
+                                    <th>Description</th>                               
+                                </tr>
+                            </thead>
+                            <tbody>                        
+                                {% assign part_index = part.order | minus: 1 %}
+                                {% if section_data[part_index].guidelines %}
+                                {% assign guidelines = section_data[part_index].guidelines | sort: 'order' %}
+                                {% for guideline in guidelines %}
+                                <tr>
+                                    <td>{{ guideline.guideline }}</td>
+                                    <td>{{ guideline.description }}</td>
+                                </tr>
+                                {% endfor %}
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        {% capture this_part %}part{{ section.order }}{{ part.order }}{% endcapture %}
-        {% assign descriptions = site.[this_part] | where:'type', 'description' %}
-        {% for description in descriptions %}
-            {{ description.content | markdownify }}
-        {% endfor %}
-        
-        <div class="flyers" style="display:none">
-        {% assign flyers = site.[this_part] | where:'type', 'flyer' %}
-        {% for flyer in flyers %}
-            {% capture id %}{{ flyer.title | replace: ' ', '_' }}{% endcapture %}
-            <section class="flyer" id="{{ id }}" style='padding:10px; background:#fff;'>
-            {{ flyer.content | markdownify }}
-            </section>
-        {% endfor %}
+            <div class="well">
+                {% assign descriptions = site.[this_part] | where:'type', 'description' %}
+                {% for description in descriptions %}
+                    {{ description.content | markdownify }}
+                {% endfor %}
+            </div>
+            <div class="flyers" style="display:none">
+                {% assign flyers = site.[this_part] | where:'type', 'flyer' %}
+                    {% for flyer in flyers %}
+                        {% capture id %}{{ flyer.title | replace: ' ', '_' }}{% endcapture %}
+                        <section class="flyer" id="{{ id }}" style='padding:10px; background:#fff;'>
+                            {{ flyer.content | markdownify }}
+                        </section>
+                    {% endfor %}
+            </div>
         </div>
     </div>
 </section>
 {% endfor %}
+</div>
