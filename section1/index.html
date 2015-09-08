@@ -7,15 +7,21 @@ layout: default
 
 <h2>Section {{ section.order }}: {{ section.title }}</h2>
 <h3>Checklist</h3>
-<p>checklist comes here</p>
+<ul>
+    {% for item in section_data.checklist %}
+        <li>{{ item.item }}</li>
+    {% endfor %}
+</ul>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-{% for part in section_data %}
+{% for part in section_data.parts %}
 <section>
     {% capture this_part %}part{{ section.order }}{{ part.order }}{% endcapture %}
     <div class="panel panel-default" role="tab" id="header{{ this_part }}">
         <div class="panel-heading">
             <h3 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ this_part }}" aria-expanded="true" aria-controls="{{ this_part }}">Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</a>
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ this_part }}" aria-expanded="true" aria-controls="{{ this_part }}">
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</a>
             </h3>
         </div>
         <div id="{{ this_part }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header{{ this_part }}">
@@ -37,8 +43,8 @@ layout: default
                             </thead>
                             <tbody>                        
                                 {% assign part_index = part.order | minus: 1 %}
-                                {% if section_data[part_index].guidelines %}
-                                {% assign guidelines = section_data[part_index].guidelines | sort: 'order' %}
+                                {% if section_data.parts[part_index].guidelines %}
+                                {% assign guidelines = section_data.parts[part_index].guidelines | sort: 'order' %}
                                 {% for guideline in guidelines %}
                                 <tr>
                                     <td>{{ guideline.guideline }}</td>
@@ -62,6 +68,7 @@ layout: default
                     {% for flyer in flyers %}
                         {% capture id %}{{ flyer.title | replace: ' ', '_' }}{% endcapture %}
                         <section class="flyer" id="{{ id }}" style='padding:10px; background:#fff;'>
+                            <h2>{{ flyer.title }}</h2>
                             {{ flyer.content | markdownify }}
                         </section>
                     {% endfor %}
