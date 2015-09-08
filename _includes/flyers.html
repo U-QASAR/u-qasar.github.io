@@ -1,0 +1,9 @@
+<div class="flyers-list">
+    {% assign flyers = site.[this_part] | where:'type', 'flyer' %}
+    <ul>
+    {% for flyer in flyers %}
+      {% capture id %}{{ flyer.title | replace: ' ', '_' }}{% endcapture %}
+      <li><a class="inline flyer-link" href="#{{ id }}">{{ flyer.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
