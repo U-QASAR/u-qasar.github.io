@@ -1,3 +1,4 @@
+bookref: 2.1
 checklist:
   - item: There needs to be a documented plan for the measurement program
   - item: Important quality viewpoints should be recognized and defined as quality objectives
@@ -5,7 +6,7 @@ checklist:
   - item: The measurement program needs to be validated as soon as possible
 parts:  
     - order: 1
-      subparts: Step
+      bookref: 2.1.1
       title: Planning a measurement program
       guidelines:
         - guideline: Define the purpose of the measurement
