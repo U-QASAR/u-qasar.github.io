@@ -1,14 +1,7 @@
 <nav class="bs-docs-sidebar">
     <ul class="nav bs-docs-sidenav">
     {% for section in site.data.sections %}
-        <li><a class="dropdown-toggle" data-toggle="dropdown" href="">{{ section.order }}: {{section.title}}</a>
-            <ul class="dropdown-menu" class="nav bs-docs-sidenav">
-                {% capture this_section %}section{{ section.order }}{% endcapture %}
-                {% assign section_data = site.data.[this_section] %}
-                {% for part in section_data %}
-                <li><a href="">{{section.order}}.{{part.order}} {{part.title}}</a></li>
-            {% endfor %}        
-            </ul>
+        <li><a href="/section{{ section.order}}/">{{ section.order }}: {{section.title}}</a>
         </li>
     {% endfor %}    
     </ul>
