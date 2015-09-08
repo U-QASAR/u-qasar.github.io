@@ -16,61 +16,12 @@ layout: default
                     Control and Measurement methodology to assess the quality of software
                     development projects and their resulting products. The U-QASAR platform
                     enables measurement of the quality of the process and product at any time.</p>
+                <p>This webbook is intended as a quick reference of the Methodology Workbook and is composed of 4 sections. The sections describe the most important steps (planning, controlling, and changingt) to implement quality models that reflect the U-Qasar methodology in your institution. Sections are divided in smaller parts. These parts contain clear guidelines and flyers that you can directly use.
+                </p>
+                <p>To read more about the each of the sections and parts, we have added a reference to the section in the Methodology Workbook.
+                </p>
             </section>
         </div>
     </div>
 
 </section>
-
-{% for section in site.data.sections %}
-<h2>Section {{ section.order }}: {{ section.title }}</h2>
-{% capture this_section %}section{{ section.order }}{% endcapture %}
-{% assign section_data = site.data.[this_section] %}
-{% for part in section_data %}
-<section>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</h3>
-        </div>
-        <div class="panel-body">
-            <p>
-                {{  part.summary  }}
-            </p>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">Part overview</h4>
-                </div>
-                <div class="panel-body">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>{{ part.subparts }}</th>
-                                <th>Summary</th>                               
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% capture this_part %}part{{ section.order }}{{ part.order }}{% endcapture %}
-                            {% if site.[this_part] %}{% comment %} Remember to define the collection in _config.yml! {% endcomment %}
-                            {% assign steps = site.[this_part] | sort: 'order' %}
-                            {% for step in steps %}
-                            <tr>
-                                <th scope="row">{{ step.order }}</th>
-                                <td><a href="./{{ step.url }}">{{ step.title }}</a></td>
-                                <td>{{ step.summary }}</td>
-                            </tr>
-                            {% endfor %}
-                            {% endif %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-{% endfor %}
-{% endfor %}
-
-<h2>Section 2: Controlling the Daily Software Development </h2>
-<h2>Section 3: Driving Process Improvement with Measurements</h2>
-<h2>Section 4: Evolutionary Refinement of the Measurement Program: Examples of Agile and Lean Measurement</h2>
