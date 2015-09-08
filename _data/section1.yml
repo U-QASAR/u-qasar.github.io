@@ -21,7 +21,6 @@ parts:
         - guideline: Consider who will use the measurement results and when that happens.
           description: >
             Measurement data can be used on many organizational levels. Depending on the purpose and needs of the collected measurement data the useful frequency can vary from minutes to weeks or even months.
-
         - guideline: Consider the sensitivity of the measurements
           description: >
             When measurements target individual people and their activities the data is always sensitive. It is important to decide on what level of the organization the data is used and who gets access to it.     
@@ -31,7 +30,7 @@ parts:
       guidelines: 
       - guideline: Recognize the important quality viewpoints with different stakeholders
         description: > 
-            A quality viewpoint represents the key concerns of a particular stakeholder or stakeholder group. Different stakeholders are likely to prioritize software quality differently. Therefore, in order to make an effective measurement program, it also becomes important to start by considering the different viewpoints for software quality collaboratively with the key stakeholders (customers & users, sales & requirements, product & project management, developers & testers, customer service, etc.). 
+          A quality viewpoint represents the key concerns of a particular stakeholder or stakeholder group. Different stakeholders are likely to prioritize software quality differently. Therefore, in order to make an effective measurement program, it also becomes important to start by considering the different viewpoints for software quality collaboratively with the key stakeholders (customers & users, sales & requirements, product & project management, developers & testers, customer service, etc.). 
       - guideline: Use formal methods to define quality objectives
-      description: > 
-        Each stakeholder has a potentially unique set of concerns. Thus, before embarking in creating a quality model framework, the organization – in cooperation with the project – needs to agree on how this variety of concerns is exploited.
+        description: > 
+          Each stakeholder has a potentially unique set of concerns. Thus, before embarking in creating a quality model framework, the organization – in cooperation with the project – needs to agree on how this variety of concerns is exploited.
