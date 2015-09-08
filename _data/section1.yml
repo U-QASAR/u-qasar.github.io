@@ -36,18 +36,18 @@ parts:
       description: > 
         Each stakeholder has a potentially unique set of concerns. Thus, before embarking in creating a quality model framework, the organization – in cooperation with the project – needs to agree on how this variety of concerns is exploited.
 	- order: 3
-	subparts: Step
-	title: Defining the Metrics: GQM method
-	guidelines:
-	- guideline: Enable the stakeholder involvement
-		description: >
-		Involve the project members in the work of identifying what measurement data should be collected.
-	- guideline: Be sensitive to your people
-		description: >
-		Do not use the collected data to measure individuals.
-	- guideline: Create an atmosphere of confidence
-		description: >
-		Create an atmosphere of confidence – to the collection process and the people responsible for collecting the data. 
-	- guideline: Focus on useful measurements
-		description: >
-		Use the data for something useful – avoid “information graveyards”.
+    subparts: Step
+    title: Defining the Metrics: GQM method
+    guidelines:
+    - guideline: Enable the stakeholder involvement
+        description: >
+        Involve the project members in the work of identifying what measurement data should be collected.
+    - guideline: Be sensitive to your people
+        description: >
+        Do not use the collected data to measure individuals.
+    - guideline: Create an atmosphere of confidence
+        description: >
+        Create an atmosphere of confidence – to the collection process and the people responsible for collecting the data. 
+    - guideline: Focus on useful measurements
+        description: >
+        Use the data for something useful – avoid “information graveyards”.
