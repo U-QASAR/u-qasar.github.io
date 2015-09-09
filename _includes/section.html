@@ -1,11 +1,11 @@
----
-layout: default
----
-{% assign section = site.data.sections[0] %}
+{% assign section_index = section_order | minus: 1 %}
+{% assign section = site.data.sections[section_index] %}
 {% capture this_section %}section{{ section.order }}{% endcapture %}
 {% assign section_data = site.data.[this_section] %}
 
-<h2>Section {{ section.order }}: {{ section.title }}</h2>
+<h2>Section {{ section.order }}: {{ section.title }}
+<span class="bookref"> ( <span class="glyphicon glyphicon-zoom-in" aria-label="Reference to Methodology Workbook" aria-hidden="true"></span> Section {{ section_data.bookref }} )</span>
+</h2>
 <h3>Checklist</h3>
 <ul>
     {% for item in section_data.checklist %}
@@ -14,15 +14,14 @@ layout: default
 </ul>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 {% for part in section_data.parts %}
-<section>
     {% capture this_part %}part{{ section.order }}{{ part.order }}{% endcapture %}
     <div class="panel panel-default" role="tab" id="header{{ this_part }}">
         <div class="panel-heading">
             <h3 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ this_part }}" aria-expanded="true" aria-controls="{{ this_part }}">
                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                    Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</a>
-            </h3>
+                    Part {{ section.order }}.{{  part.order  }} : {{  part.title  }}</a> <span class="bookref"> ( <span class="glyphicon glyphicon-zoom-in" aria-label="Reference to Methodology Workbook" aria-hidden="true"></span> Section {{ part.bookref }} )</span>
+            </h3> 
         </div>
         <div id="{{ this_part }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header{{ this_part }}">
             <div class="panel-body">
@@ -82,7 +81,6 @@ layout: default
                     {% endfor %}
             </div>
         </div>
-    </div>
-</section>
+    </div>    
 {% endfor %}
 </div>
