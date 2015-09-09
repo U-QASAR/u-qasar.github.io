@@ -25,7 +25,7 @@ parts:
           description: >
             When measurements target individual people and their activities the data is always sensitive. It is important to decide on what level of the organization the data is used and who gets access to it.
     - order: 2
-      subparts: Step
+      bookref: 2.1.2
       title: Setting up the Quality Objectives
       guidelines:
       - guideline: Recognize the important quality viewpoints with different stakeholders
@@ -35,7 +35,7 @@ parts:
         description: >
           Each stakeholder has a potentially unique set of concerns. Thus, before embarking in creating a quality model framework, the organization – in cooperation with the project – needs to agree on how this variety of concerns is exploited.
     - order: 3
-      subparts: Step
+      bookref: 2.1.3
       title: "Defining the Metrics: GQM method"
       guidelines:
         - guideline: Enable the stakeholder involvement
