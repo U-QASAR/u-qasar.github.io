@@ -1,4 +1,27 @@
-- order: 1
-  title: Setting the Quality Objectives, Indicators and Metrics
-  summary: >
-   The workshop produces a set of quality objectives that are context specific for a particular level, i.e.,company, product, process or feature. The level of the quality objectives depends on the level quality objective workshop is held. The objective setting workshop produces objectives based on participant’s expertise that is supported by the company quality model.
+bookref: 2.2
+checklist:
+  - item: Focus needs to be on the current situation
+  - item: Automatic and manual data sources are both considered
+  - item: Experts are used to guide the decision making
+  - item: Management support is acticated and made visible
+
+parts:
+    - order: 1
+      bookref: 2.2.1
+      title: Data collection
+      guidelines:
+        - guideline: Tools selection
+          description: >
+            Tools used directly by software developers are good candidates for collecting data without putting an extra burden on the developers.
+        - guideline: The use of automation
+          description: >
+            Project members should primarily concentrate on the development project, and spend as little time as possible on reporting data. One should strive for automatic measurement wherever possible.
+        - guideline: The use of data collection forms
+          description: >
+            What cannot be recognized cannot be monitored. The easiest situation is when the desired quality indicators can be measured by numeric metrics. If direct and objective quantitative measurement cannot be found for the indicator, it might still be possible to evaluate the indicator by human assessment. If the desired indicator cannot be measured with specific metrics, it might still be able to collect subjective estimates or assessments.
+        - guideline: Consider who will use the measurement results and when that happens.
+          description: >
+            In order to save project member (and other actors) time, the forms should be as few as possible, and easy to fill in. The forms should also hold all information necessary to understand how to fill it in. It should not be necessary to fill in data that could be automatically added. The fields in forms need to indicate what unit and accuracy level is to be used. Finally, there should be a field for comments.
+        - guideline: Useful quality knowledge
+          description: >
+            The “useful quality knowledge” refers to the reactiveness of daily software development activities, but also to the proactiveness of making these things better in the future. The related analyses include efficient and effective 1) Quality control and 2) Process improvement.
