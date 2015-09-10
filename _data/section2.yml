@@ -26,3 +26,14 @@ parts:
         - guideline: Useful quality knowledge
           description: >
             The “useful quality knowledge” refers to the reactiveness of daily software development activities, but also to the proactiveness of making these things better in the future. The related analyses include efficient and effective 1) Quality control and 2) Process improvement.
+    - order: 2
+      bookref: 2.2.2
+      title: Quality control on a daily basis
+      guidelines:
+        - guideline: Automated measurements
+          description: >
+            In terms of process quality, the most important automated quality control measurement is the test coverage, also known as code coverage. In terms of product quality, the most important automated quality control measurement is the technical debt, which divides into sub­topics of defect debt, requirements debt, documentation debt, and architectonic debt.
+        - guideline: Expert judgements
+          description: >
+            Considering the state of the ongoing project with experts (e.g. architects, senior developers, project managers, quality assurance personnel, etc.) results to in­depth understanding about the project. The automated measurement results regarding the quality goals provide a good starting point for such discussions. Conclude what goes well in the project and what needs to be improved. The aim is to create a bridge between the quality goals and the product and process quality.
+ 
