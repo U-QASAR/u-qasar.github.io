@@ -50,3 +50,13 @@ parts:
         - guideline: Focus on useful measurements
           description: >
             Use the data for something useful – avoid “information graveyards”.
+    - order: 4
+      bookref: 2.1.4
+      title: "Assessing the measurement program"
+      guidelines:
+        - guideline: Validate the data as soon as possible
+          description: >
+            Validation of data should be done before all project members have reached a common understanding of the metrics.
+        - guideline: Avoid random and systematic deviations
+          description: >
+            The reliability of measures is threatened by all aspects that can cause random or systematic deviations in the measurement data. The procedures and instruments used for collecting measurement data and the source of data are the usual sources of such deviations.

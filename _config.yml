@@ -29,6 +29,9 @@ collections:
     part13:
         permalink: /section1/:collection/:title.html
         output: true    
+    part14:
+        permalink: /section1/:collection/:title.html
+        output: true    
     part21:
         permalink: /section2/:collection/:title.html
         output: true    
