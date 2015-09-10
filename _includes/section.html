@@ -12,6 +12,11 @@
         <li>{{ item.item }}</li>
     {% endfor %}
 </ul>
+{% if section_data.description %}
+<p>
+  {{ section_data.description }}
+</p>  
+{% endif %}
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 {% for part in section_data.parts %}
     {% capture this_part %}part{{ section.order }}{{ part.order }}{% endcapture %}
