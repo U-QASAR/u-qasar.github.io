@@ -4,7 +4,8 @@ checklist:
   - item: Automatic and manual data sources are both considered
   - item: Experts are used to guide the decision making
   - item: Management support is acticated and made visible
-
+# This section introduces how to use the measurement program to control the daily software development. 
+# The goal is to provide useful knowledge on the quality of software system development process and/or product.
 parts:
     - order: 1
       bookref: 2.2.1
