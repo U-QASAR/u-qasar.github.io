@@ -4,6 +4,8 @@ checklist:
   - item: Important quality viewpoints should be recognized and defined as quality objectives
   - item: Indicators & metrics for quality objectives requires attention
   - item: The measurement program needs to be validated as soon as possible
+description: >
+  This is a description...   
 parts:
     - order: 1
       bookref: 2.1.1
