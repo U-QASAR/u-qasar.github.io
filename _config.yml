@@ -37,10 +37,14 @@ collections:
         output: true    
     part22:
         permalink: /section2/:collection/:title.html
-        output: true   
+        output: true
     part23:
         permalink: /section2/:collection/:title.html
         output: true    
     part24:
         permalink: /section2/:collection/:title.html
+        output: true
+    part31:
+        permalink: /section3/:collection/:title.html
         output: true    
+
