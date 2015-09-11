@@ -3,7 +3,7 @@
     <ul>
     {% for flyer in flyers %}
       {% capture id %}{{ flyer.title | replace: ' ', '_' }}{% endcapture %}
-      <li><a class="inline flyer-link" href="#{{ id }}">{{ flyer.title }}</a></li>
+      <li><a class="inline flyer-link" href="#{{ id }}">{{ flyer.title }}</a> <a onclick="printFlyer('{{ this_part }}/{{ flyer.title | downcase| replace: ' ', '-'}}.html')" href="#"><span class="glyphicon glyphicon-print" aria-hidden="true" aria-label="print flyer"></span></a></li>
     {% endfor %}
   </ul>
 </div>

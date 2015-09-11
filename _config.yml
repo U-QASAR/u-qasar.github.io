@@ -15,13 +15,12 @@ defaults:
     - scope:
         path: ""
       values:
-        layout: section
+        layout: flyer
 # Build settings
 markdown: kramdown
 collections:
     part11:
         permalink: /section1/:collection/:title.html
-        url: :permalink
         output: true
     part12:
         permalink: /section1/:collection/:title.html

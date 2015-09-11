@@ -12,6 +12,13 @@
 $(document).ready(function(){
     $(".inline").colorbox({inline:true, width:"50%"});
 });
+
+function printFlyer(url) 
+{
+    var w = window.open(url);
+    w.print();
+}
+
 //Collapse open parts in sections
 //$('#accordion').on('show.bs.collapse', function () {
 //    $('#accordion .in').collapse('hide');
