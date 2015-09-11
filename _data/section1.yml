@@ -28,7 +28,7 @@ parts:
             When measurements target individual people and their activities the data is always sensitive. It is important to decide on what level of the organization the data is used and who gets access to it.
     - order: 2
       bookref: 2.1.2
-      title: Setting up the Quality Objectives
+      title: Setting up the Quality Objectives ***Flyer lacks figures***
       guidelines:
       - guideline: Recognize the important quality viewpoints with different stakeholders
         description: >

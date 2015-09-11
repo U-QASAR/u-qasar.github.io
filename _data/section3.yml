@@ -19,12 +19,16 @@ parts:
           description: >
             Root cause analysis is a structured investigation of a problem, which aims to state what changes are needed in the future projects. Root cause analysis takes a problem as an input and provides a set of its perceived cause­and-effect relationships as an output. It creates a causal model, which can be used to explain how the problems are related to one another, ultimately helping to determine process improvement targets. Additionally, the causal model can be used to consolidate and extend the prediction models and project experience questionnaires.
     - order: 2
-      bookref: 2.2.2
-      title: Quality control on a daily basis ___OLD___
+      bookref: 2.3.2
+      title: Evolution of quality models *** First guideline needs newlines for the two items in the list ***
       guidelines:
-        - guideline: Automated measurements
+        - guideline: Describe the quality model evolution
           description: >
-            In terms of process quality, the most important automated quality control measurement is the test coverage, also known as code coverage. In terms of product quality, the most important automated quality control measurement is the technical debt, which divides into sub­topics of defect debt, requirements debt, documentation debt, and architectonic debt.
-        - guideline: Expert judgements
+            To understand the evolution of quality models there are two questions we must address:
+
+            1) What elements of the quality model are likely to change?
+
+            2) What elements of the quality model are likely to endure?
+        - guideline: Mapping the product life cycle to appropriate measurements
           description: >
-            Considering the state of the ongoing project with experts (e.g. architects, senior developers, project managers, quality assurance personnel, etc.) results to in­depth understanding about the project. The automated measurement results regarding the quality goals provide a good starting point for such discussions. Conclude what goes well in the project and what needs to be improved. The aim is to create a bridge between the quality goals and the product and process quality.
+            There is a need to revise the practical (methodological) level with quality model evolution and explain what are the effects of such evolution on the measurements.
