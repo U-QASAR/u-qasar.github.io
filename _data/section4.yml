@@ -1,0 +1,32 @@
+bookref: 2.4
+checklist:
+  - item: Consider the evolution of the development domain
+  - item: Reflect the quality management strategy
+  - item: Refine the quality models, indicators, and metrics
+description: >
+  Technological systems with some importance tend to outlive the initial project that created them. Typically, the maturing of software systems is accompanied by revisions to the quality management strategy used to direct the focusing and attention to different quality objectives. Industrial software practice suggests that there are three generic types of quality management strategies: <ul> <li> Maximize customer satisfaction <li> Minimize engineering effort and schedule <li> Minimize defects </ul> Which strategy is active at a particular point in time in a product's life cycle is a management decisions that can be influenced by market pressures, product strategies, portfolio considerations etc. With increasing speed of innovation, and shorter release cycles, product managers may need to postpone qualities such as maintainability and scalability for later. In consequence, a quality management methodology needs to accommodate a potentially evolving strategy for quality management.  
+  <br><br>Quality management is best helped by considering the current software life cycles stage. Depending on its status, from initial development through evolution, servicing, phaseout and closedown stages, the development needs different focus on a set of factors like staff expertise, software architecture and decay and economic factors.
+parts:
+    - order: 1
+      bookref: 2.4.1
+      title: Evolution of quality models
+      guidelines:
+        - guideline: Describe the quality model evolution
+          description: >
+            To understand the evolution of quality models there are two questions we must address: <ul><li>What elements of the quality model are likely to change?<li>What elements of the quality model are likely to endure?</ul>
+        - guideline: Mapping the product life cycle to appropriate measurements
+          description: >
+            There is a need to revise the practical (methodological) level with quality model evolution and explain what are the effects of such evolution on the measurements.
+    - order: 2
+      bookref: 2.4.3
+      title: Quality assurance in a continuous deployment environment
+      guidelines:
+        - guideline: Fit QA activities into continuous deployment strategy
+          description: >
+            Customers are relying less and less on buying versions of software, they buy access to a product that is constantly changing and evolving to meet market demands. The product is no longer produced and sold as set versions with specific release dates – instead the product is constantly changing and evolving to cater for the needs of the users and technical needs. Tactics for testing new features or ideas on a subset of customers has been developed.
+        - guideline: Enforce QA activities at the developer's side
+          description: >
+            In the world of continuous deployment, the goal is to reduce time between coding and deploying the code on the production server for actual use by customers. Continuous deployment means that software developers become responsible for deployments and the quality assurance team has not looked at the quality of the already deployed code. The developers are thus responsible for the quality of the code, and this increases pressure on the developers.
+        - guideline: Enable roll-back
+          description: >
+            Lean startup focuses on using methods like A/B testing, and observing how the groups behave as they are using two versions of the same feature. By trying out new strategies and ideas on a continuous basis, small increments at the time, the idea is to spend as little effort as possible to check if the idea was beneficial or not. If it isn’t, it is simple to roll back to the previous version. By deploying small chunks of code there is also more control over deployment. You don’t deploy many features at the same, so if something goes wrong you stand a better chance to find out what is wrong. 

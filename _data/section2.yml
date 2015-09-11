@@ -1,4 +1,38 @@
-- order: 1
-  title: Setting the Quality Objectives, Indicators and Metrics
-  summary: >
-   The workshop produces a set of quality objectives that are context specific for a particular level, i.e.,company, product, process or feature. The level of the quality objectives depends on the level quality objective workshop is held. The objective setting workshop produces objectives based on participant’s expertise that is supported by the company quality model.
+bookref: 2.2
+checklist:
+  - item: Focus needs to be on the current situation
+  - item: Automatic and manual data sources are both considered
+  - item: Experts are used to guide the decision making
+  - item: Management support is acticated and made visible
+description: >
+  This section introduces how to use the measurement program to control the daily software development. The goal is to provide useful knowledge on the quality of software system development process and/or product.
+parts:
+    - order: 1
+      bookref: 2.2.1
+      title: Data collection
+      guidelines:
+        - guideline: Tools selection
+          description: >
+            Tools used directly by software developers are good candidates for collecting data without putting an extra burden on the developers.
+        - guideline: The use of automation
+          description: >
+            Project members should primarily concentrate on the development project, and spend as little time as possible on reporting data. One should strive for automatic measurement wherever possible.
+        - guideline: The use of data collection forms
+          description: >
+            What cannot be recognized cannot be monitored. The easiest situation is when the desired quality indicators can be measured by numeric metrics. If direct and objective quantitative measurement cannot be found for the indicator, it might still be possible to evaluate the indicator by human assessment. If the desired indicator cannot be measured with specific metrics, it might still be able to collect subjective estimates or assessments.
+        - guideline: Consider who will use the measurement results and when that happens.
+          description: >
+            In order to save project member (and other actors) time, the forms should be as few as possible, and easy to fill in. The forms should also hold all information necessary to understand how to fill it in. It should not be necessary to fill in data that could be automatically added. The fields in forms need to indicate what unit and accuracy level is to be used. Finally, there should be a field for comments.
+        - guideline: Useful quality knowledge
+          description: >
+            The “useful quality knowledge” refers to the reactiveness of daily software development activities, but also to the proactiveness of making these things better in the future. The related analyses include efficient and effective 1) Quality control and 2) Process improvement.
+    - order: 2
+      bookref: 2.2.2
+      title: Quality control on a daily basis
+      guidelines:
+        - guideline: Automated measurements
+          description: >
+            In terms of process quality, the most important automated quality control measurement is the test coverage, also known as code coverage. In terms of product quality, the most important automated quality control measurement is the technical debt, which divides into sub­topics of defect debt, requirements debt, documentation debt, and architectonic debt.
+        - guideline: Expert judgements
+          description: >
+            Considering the state of the ongoing project with experts (e.g. architects, senior developers, project managers, quality assurance personnel, etc.) results to in­depth understanding about the project. The automated measurement results regarding the quality goals provide a good starting point for such discussions. Conclude what goes well in the project and what needs to be improved. The aim is to create a bridge between the quality goals and the product and process quality.

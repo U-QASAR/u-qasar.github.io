@@ -28,6 +28,25 @@ collections:
     part13:
         permalink: /section1/:collection/:title.html
         output: true    
+    part14:
+        permalink: /section1/:collection/:title.html
+        output: true    
     part21:
         permalink: /section2/:collection/:title.html
         output: true    
+    part22:
+        permalink: /section2/:collection/:title.html
+        output: true
+    part23:
+        permalink: /section2/:collection/:title.html
+        output: true    
+    part24:
+        permalink: /section2/:collection/:title.html
+        output: true
+    part31:
+        permalink: /section3/:collection/:title.html
+        output: true    
+    part41:
+        permalink: /section4/:collection/:title.html
+        output: true    
+

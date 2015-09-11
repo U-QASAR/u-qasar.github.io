@@ -1,0 +1,10 @@
+---
+type: description
+---
+Quality control represents the reactive QA approach, which is used to support the decision making regarding the ongoing project. Its goal is to assure that the process and product quality goals are both reached. This goal divides into two methodological topics. The first topic covers automated analyses, which include technical debt calculations (LINK TO THE FLYER­ “The definitions of technical debt”) , test coverage analyses, and the use of prediction models. The second topic covers expert judgement methodologies, which include the estimations of defect dependencies and their priorities in terms of “what to do next?”   
+
+In terms of product quality, the most important automated quality control measurement is the technical debt, which divides into sub­topics of defect debt, requirements debt, documentation debt, and architectonic debt. The key is to improve the product just in time and from correct aspects.In terms of process quality, the most important automated quality control measurement is the test coverage, also known as code coverage. It states the degree to which the source code is tested.  
+
+Expert judgement analyses (LINK TO FLYER ­ “The focus of the expert judgement analyses”) are based on the perceptions of professionals, e.g., Daily Stand­Up meetings. Despite the fact that many of the quality control analyses can be automated (e.g. a correlation analysis can be automatically conducted as a part of the prediction models), the expert judgement is crucial to consolidate and prioritize the “real situation” in the project. The expert judgement analyses start by considering the state of the ongoing project, e.g., a Daily Stand­Up meeting defines what have been done, what to do next, and are there any open issues. The automated measurement results regarding the quality goals provide a good starting point for such discussions.
+
+After understanding the state of the project, the open issues need to be prioritized in order to express what needs to be improved. Respectively, the things that go well needs to be compared with the open issues, in order to consider whether the used effort is aimed correct.
