@@ -46,7 +46,7 @@ collections:
     part31:
         permalink: /section3/:collection/:title.html
         output: true    
-    part32:
-        permalink: /section3/:collection/:title.html
+    part41:
+        permalink: /section4/:collection/:title.html
         output: true    
 
