@@ -5,5 +5,7 @@
 - order: 3
   title: Driving Process Improvement with Measurements
 - order: 4 
-  title: Evolutionary Refinement of the Measurement Program. Examples of Agile and Lean Measurement
+  title: Evolutionary Refinement of the Measurement Program
+- order: 5 
+  title: Agile and Lean Measurement
 
