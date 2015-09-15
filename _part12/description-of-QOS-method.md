@@ -20,7 +20,7 @@ The foundation of the U-QASAR Methodology and Platform is the quality model that
 ### Step 3: Prioritization of the Quality Objectives
 * After the brainstorming the formed Quality Objectives are collaboratively prioritized by voting.
 * Everyone has equal, fixed number of votes . 
-* Everyone can give any number of his or her votes to any objective (LINK TO PICTURE of an example objective with post-its and votes).
+* Everyone can give any number of his or her votes to any objective, see bottom of page
 
 ### Step 4: Elaboration of Indicators & Metrics
 * The objectives are taken under elaboration in the order of voting priority.
@@ -38,7 +38,8 @@ The foundation of the U-QASAR Methodology and Platform is the quality model that
 * Implement the Quality Model (Objectives, Indicators, Metrics) on the [U-QASAR Platform](http://platform.uqasar.eu)
 * Set up the monitoring and feedback practices to get the Objectives into actual use.
 
-Figure: The template quality model (a reference QUALITY MODEL)
+The following figure describes a template quality model for the QOS Workshops. 
+<img src="/files/part12/Template_quality_model.png" alt="Template quality model" style="width=100%;height:100%;">
 
-
-Figure. Quality objectives after grouping and voting.  (PICTURE of an example objective with post-its and votes)
+The following figure shows quality objectives after grouping and voting has taken place.
+<img src="/files/part12/Quality_objectives_after_grouping_and_voting.png" alt="Quality objectives after grouping and voting." style="width=100%;height:100%;">

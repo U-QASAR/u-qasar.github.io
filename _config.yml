@@ -52,4 +52,7 @@ collections:
     part51:
         permalink: /section5/:collection/:title.html
         output: true    
+    part52:
+        permalink: /section5/:collection/:title.html
+        output: true    
 

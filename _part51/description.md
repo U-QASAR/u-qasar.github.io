@@ -1,6 +1,18 @@
 ---
 type: description
 ---
-Software systems tend to pass through different stages (link to the FLYER: The staged model for the software life cycle) from its first version till it is finally replaced by an alternative system. These stages need to be mapped to the product under the development since they should steer the development of the quality models too. QA project is associated with a product, a development project and an overall quality model. The latter is a manifestation of the organization's quality strategy. The overall quality model may include quality objectives that span beyond software projects, but will be influential in the creation of the particular QA project. A unique QA project is created upon the establishment of a new development project, even if the project concerns an existing product. This is the entity in which change is most likely – it is the main point of support for life cycle evolution of quality management.
+Metrics in the Agile and Lean Software development are used for certain main purposes, and it is important to understand the goals and reasons behind using individual metrics when building or using a measurement program in agile context. Metrics can be used for different needs in software development and the focus and goals of measurement differ between agile and more traditional, plan driven, measurement programs. The purpose of measuring agile software development products and activities is divided into five categories (see also <a class="inline flyer-link" href="#Collection_of_Agile_Metrics_for_Specific_Purposes">Collection of agile metrics for specific purposes</a>):
 
-Lower level concepts, the indicators and the metrics, may also be replaced, but probably at a slower pace. With time, the organization is likely to accumulate a relatively stable set of indicators and metrics. After all, the final objective of all the quality management strategies is customer satisfaction. Therefore, we should expect that the accumulated set of indicators and metrics cover the entities of interest. What is changing is the weighting of indicators and
+1. Sprint and project planning
+1. Sprint and project tracking
+1. Understanding and improving quality
+1. Fixing process problems
+1. Motivating people
+
+There are certain agile metrics that are commonly found beneficial and can be considered as the cornerstones of agile measurement. These metrics, following the above purpose classification, are
+
+1. Team velocity and effort estimates
+1. Development progress in terms of working code
+1. Passing acceptance tests and code level technical debt metrics, and customer satisfaction
+1. Story and task flow metrics and lead times
+1. Visible dashboards visualizing current problems that need attention.
