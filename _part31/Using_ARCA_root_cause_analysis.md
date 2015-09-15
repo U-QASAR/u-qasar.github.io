@@ -2,6 +2,9 @@
 title: Using ARCA root cause analysis method to improve software development practice
 type: flyer
 ---
+
+<img src="/files/part31/ARCA.bmp" alt="ARCA" style="width=100%;height:100%;">
+
 * Step 1: Target problem detection
 
 The target problem detection step uses the outcome of analysing the measurement results as an input. The analyses of measures help to determine the process improvement opportunities, i.e., target problems that need to be controlled. For example, the analyses could reveal that the technical debt has increased or that the test coverage is insufficiently low. It is important to conclude what happens and where. Timelining and the use of focus groups have been presented as efficient and evidence­based approaches for detecting the target problems. It is also possible to use checklists and questionnaires in order to detect target problems. 

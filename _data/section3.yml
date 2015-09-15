@@ -10,11 +10,11 @@ description: >
 parts:
     - order: 1
       bookref: 2.3.1
-      title: Process improvement analyses  *** Flyer needs figure ***
+      title: Process improvement analysis
       guidelines:
         - guideline: Post­mortem analysis
           description: >
-            Post­mortem analysis is a lightweight retrospective method that has been commonly used to determine <ul><li> what went well in the software project,<li> what could be improved in the next project, and 3) how to make it better. It takes positive and negative software development experiences as an input and provides knowledge on how to make it better the next time as an output. Usually, post­mortems are conducted in a group and they can also utilize techniques like Root cause analysis. <li>how to make it better.</ul>  It takes positive and negative software development experiences as an input and provides knowledge on how to make it better the next time as an output. Usually, post-mortems are conducted in a group and they can also utilize techniques like Root cause analysis.
+            Post­mortem analysis is a lightweight retrospective method that has been commonly used to determine <ul><li> what went well in the software project,<li> what could be improved in the next project<li>how to make it better.</ul>  It takes positive and negative software development experiences as an input and provides knowledge on how to make it better the next time as an output. Usually, post-mortems are conducted in a group and they can also utilize techniques like Root cause analysis.
         - guideline: Root cause analysis
           description: >
             Root cause analysis is a structured investigation of a problem, which aims to state what changes are needed in the future projects. Root cause analysis takes a problem as an input and provides a set of its perceived cause­and-effect relationships as an output. It creates a causal model, which can be used to explain how the problems are related to one another, ultimately helping to determine process improvement targets. Additionally, the causal model can be used to consolidate and extend the prediction models and project experience questionnaires.

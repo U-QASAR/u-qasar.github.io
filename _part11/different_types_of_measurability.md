@@ -1,9 +1,7 @@
 ---
-title: The different types of measurability
+title: Different types of measurability
 type: flyer
 ---
-The degree of automation in data collection affects the required effort in data collection as well as the availability and reliability of the measurement data. The more automated the data collection and presentation can be made the more reliably and frequently the data will be available. In addition, by avoiding manual activities in data collection whenever feasible makes the human errors, omissions, and unintentional as well as intentional biases less frequent.
-
 ### Measurable with quantitative numbers
 The easiest situation is when the desired quality objectives can be measured by numeric metrics. Examples of such metrics are lines of code, code coverage of tests, and numbers of defects. When numeric metrics exist the objective is easy to make visible and track. However, one should still be careful not to make too straightforward conclusions based on seemingly "hard" data.
 

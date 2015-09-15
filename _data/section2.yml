@@ -25,7 +25,7 @@ parts:
             In order to save project member (and other actors) time, the forms should be as few as possible, and easy to fill in. The forms should also hold all information necessary to understand how to fill it in. It should not be necessary to fill in data that could be automatically added. The fields in forms need to indicate what unit and accuracy level is to be used. Finally, there should be a field for comments.
         - guideline: Useful quality knowledge
           description: >
-            The “useful quality knowledge” refers to the reactiveness of daily software development activities, but also to the proactiveness of making these things better in the future. The related analyses include efficient and effective 1) Quality control and 2) Process improvement.
+            The “useful quality knowledge” refers to the reactiveness of daily software development activities, but also to the proactiveness of making these things better in the future. The related analyses include efficient and effective <ul><li>Quality control <li> Process improvement <ul>
     - order: 2
       bookref: 2.2.2
       title: Quality control on a daily basis
