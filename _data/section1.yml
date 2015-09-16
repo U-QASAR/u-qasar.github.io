@@ -5,7 +5,7 @@ checklist:
   - item: Indicators & metrics for quality objectives requires attention
   - item: The measurement program needs to be validated as soon as possible
 description: >
-  TODO ADD Description.......This is a description...   
+  TODO ADD Description......This is a description...   
 parts:
     - order: 1
       bookref: 2.1.1

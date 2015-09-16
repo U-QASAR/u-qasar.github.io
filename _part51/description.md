@@ -9,7 +9,7 @@ Metrics in the Agile and Lean Software development are used for certain main pur
 1. Fixing process problems
 1. Motivating people
 
-There are certain agile metrics that are commonly found beneficial and can be considered as the cornerstones of agile measurement. These metrics, following the above purpose classification, are
+There are certain agile metrics that are commonly found beneficial and can be considered as the cornerstones of agile measurement. These metrics, following the above purpose classification, are:
 
 1. Team velocity and effort estimates
 1. Development progress in terms of working code
