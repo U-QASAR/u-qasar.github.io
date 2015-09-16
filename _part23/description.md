@@ -3,10 +3,10 @@ type: description
 ---
 2.2.3.1 U-QASAR Graphical User Interface (GUI)
 ==============================================
-The *menu bar* on top of the page provides access to the essential main functionalities of the platform, i.e. the QA Projects and Quality Models. Furthermore there is a text field for executing searches from the platform content, a menu for viewing current notifications of the user, an menu entry for the language selection etc. In addition to that there are plenty of settings related to the QA Project, platform itself and the users. Finally, each user has an own menu for personal preferences and dashboards. The following figure explains with colour indicated boxes the GUI of U-QASAR.
+The *menu bar* on top of the page provides access to the essential main functionalities of the platform, i.e. the QA Projects and Quality Models. Furthermore there is a text field for executing searches from the platform content, a menu for viewing current notifications of the user, a menu entry for the language selection etc. In addition to that there are plenty of settings related to the QA Project, platform itself and the users. Finally, each user has an own menu for personal preferences and dashboards. The following figure explains with colour indicated boxes the GUI of U-QASAR.
 
 
-<img src="_part23/img/GUI.png " width="760" alt="U-QUASAR Graphical User Interface (GUI)" />
+<img src="GUI.png" width="760" alt="U-QUASAR Graphical User Interface (GUI)" />
 
  
 The *QA Project Tree View* that resides on the left side of the figure contains the current QA Project tree content with the specified Quality Objectives, Quality Indicators and Metrics. The tree structure nodes can be expanded or collapsed, and edited. Besides that the user may add new content to the QA Project tree, remove items from the tree or change the order of the items in the tree. The Management of Quality Models is carried out in a similar manner, i.e. by using a tree structure with nodes presented in multiple layers.
@@ -14,12 +14,13 @@ Each QA Project tree view is connected to the *QA Project Detail View* (that is 
 
 2.2.3.2 Quality Model
 =====================
+
 Creating a new Quality Model 
 ----------------------------
 The user selects the option of creating a new quality model.  The quality model details are requested: name, short name, company and description. If no other quality model is active for the company, the user can define this new quality model as the reference model. The user fills in the information and saves it. The platform stores the model and updates the user interface, as presented in the following figure. 
 
 
-<img src="_part23/img/qm_create.png " width="760" alt="Quality Model: Defining a Quality Model" />
+<img src="qm_create.png " width="760" alt="Quality Model: Defining a Quality Model" />
 
 
 If the quality model does not have any quality objective, the model is marked as incomplete. Alternatively, if the user wishes to cancel the creation, no data is saved.
@@ -30,7 +31,7 @@ The user selects the option of creating a new quality objective by adding it to 
 As shown in the following figure, the quality objective details are requested by the platform: name, domain, purpose, development paradigm if the purpose is 'Process' and version if the purpose is 'Product', description, target audience, acceptance limits, target value, weight and tags. The quality objective can be labelled in order to classify it according to tags or keywords.
 
 
-<img src="_part23/img/qm_createQO.png " width="760" alt="Quality Model: Defining a Quality Objective" />
+<img src="qm_createQO.png " width="760" alt="Quality Model: Defining a Quality Objective" />
 
 
 The user fills in the information and saves it. The platform associates the quality objective to the model. If the quality objective does not have any quality indicator, the objective is marked as incomplete. Alternatively, if the user wishes to cancel the creation, no data is saved.
@@ -40,7 +41,7 @@ Defining a Quality Indicator
 The user selects the option of creating a new quality indicator by adding it to a quality objective. The following figure shows the indicators details requested by the platform: name, description, target audience and acceptance limits. 
 
 
-<img src="_part23/img/qm_createQI.png " width="760" alt="Quality Model: Defining a Quality Indicator" />
+<img src="qm_createQI.png " width="760" alt="Quality Model: Defining a Quality Indicator" />
 
 
 The user can select also if the indicator will be applied to a product, selecting its version; or to a development process, selecting the paradigm and life cycle stage. The user fills in the information and saves it. The new quality indicator is associated to the objective. If the quality indicator does not have any metric, the indicator is marked as incomplete. Alternatively, if the user wishes to cancel the creation, no data is saved.
@@ -52,7 +53,7 @@ The user selects the option of creating a new metric by adding it to a quality i
 The details are requested by the platform: name, description, source of the measure, scale and unit. The user fills in the information and saves it. The system stores the information and up-dates the quality model structure. Alternatively, if the user wishes to cancel the creation, no data is saved.
 
 
-<img src="_part23/img/qm_createMetric.png " width="760" alt="Quality Model: Defining a Metric" />
+<img src="qm_createMetric.png " width="760" alt="Quality Model: Defining a Metric" />
 
 
 Further Quality Model related functionalities on U-QASAR
@@ -69,6 +70,7 @@ Further Quality Model related functionalities on U-QASAR
 
 2.2.3.3 Quality Project
 =======================
+
 Using QA Project
 ----------------
 One of the central functionalities of the U-QASAR platform is the management of quality projects.  shows an example of a Quality Project at the U-QASAR Platform. Each project is structured as tree-like structure where Quality Objectives, Indicators and Metrics are presented in relationship to the project. U-QASAR user can add or delete new items, edit existing ones, move the item's locations in the tree etc. In the section to the right the fields of the item are shown, can be viewed and further edited. To make it less painful to search for relevant information there are fields used for filtering data in the upper part of the screen.
@@ -79,14 +81,14 @@ The user may create quality projects from scratch or use the import functionalit
 The user selects the option of creating a new QA project. The project details are requested by the platform from the user: name, acronym, start date, end date, target value, LC Stage, method for the quality average calculation (weighted or not) and description. The user fills in the information and saves it. This results in a new QA project. Alternatively, if the user wishes to cancel the creation, no data is saved.
 
 
-<img src="_part23/img/qp_create.png " width="760" alt="Quality Project: Creating a new Quality Project" />
+<img src="qp_create.png " width="760" alt="Quality Project: Creating a new Quality Project" />
 
 
 Creating a new QO/QI/Metric for QA Project
 ------------------------------------------
 In order to calculate the quality of a project, several elements are needed in Project's Tree: Quality Objectives, Quality Indicators and Metrics. These elements should be created depending hierarchically from the Project. There are two ways of doing that: the first one, which consists on selecting a subset of the active Quality Model, has been explained in chapter  Creating QA Projects; the second one, consists on creating one by one the needed elements in Projects' Tree. To do that the user needs to click on the "+" icon at the bottom of the Tree and select which type of element wants to be created, as shown in the following figure:
 
-<img src="_part23/img/qp_createQO.png " width="760" alt="Quality Project: Creating a Quality Objective for a Quality Project" />
+<img src="qp_createQO.png " width="760" alt="Quality Project: Creating a Quality Objective for a Quality Project" />
 
 By doing that a new window will appear for the user to enter element's details, which in general are: Name, Description, Thresholds, Target value, Weight and Formula
 A Quality Objective is an aggregation of one or more Quality Indicators. At the same time, a Quality Indicator is an aggregation of a set of metrics. In the field named Formula, which exists only for quality objectives and indicators, the mathematical formula for calculating the value of the element using its children's values is entered. The hierarchy of elements is established by creating each element depending on the corresponding parent in the Tree.
@@ -102,13 +104,15 @@ Further Quality Project related functionalities on U-QASAR
 
 2.2.3.4 Data Retrieval and Usage (Adapter)
 ==========================================
+
 Configuring Automatic Metrics
 -----------------------------
+
 As mentioned before the quality of one Project is measured by aggregations of its children elements. Quality Objectives are aggregations of Quality Indicators and those are aggregations of Metrics. The last element in Project's hierarchy is the metric. Metrics are used to retrieve measurements and they can be configured to get the data from external tools. Those tools should have been previously set up in the "Adapter Settings" option.
 To configure automatic Metrics the user has to select the data source in the "Metric Source" field. It should be different from "Manual", for instance "Static Analysis". Then, in the "Metric Type" field the specific metric to be retrieved should be selected (see Figure: Configuring automatic metrics): 
 
 
-<img src="_part23/img/adpt_auto.png " width="760" alt="Adapter: Configuring Automatic Metrics" />
+<img src="adpt_auto.png " width="760" alt="Adapter: Configuring Automatic Metrics" />
 
 
 Inputting the measurement data manually
@@ -116,7 +120,7 @@ Inputting the measurement data manually
 There are plenty of situations where a desired measurement value is not available, the measured value is false, no longer valid, not in a suitable format etc. This leads that the value has to be added/updated manually later. The Quality Project view enables editing of metric values. The metric type and source are set to manual. After this, the metric value can be set and the changes can be saved.
 
 
-<img src="_part23/img/adpt_manual.png " width="760" alt="Adapter: Inputting the measurement data manually" />
+<img src="adpt_manual.png " width="760" alt="Adapter: Inputting the measurement data manually" />
 
 
 Retrieving the data automatically from the connected tools (JIRA, SonarQube, TestLink, Cubes, Jenkins, Gitlab)
@@ -129,7 +133,7 @@ Further Data Retrieval and Usage related functionalities on U-QASAR
 
 2.2.3.5 Reporting and Visualization
 ===================================
-U-QASAR Reporting and Visualization services enable rich visualization of data and generation of reports about project / product quality and status. A set of the available options regarding that is presented below
+U-QASAR Reporting and Visualization services enable rich visualization of data and generation of reports about project / product quality and status. A set of the available options regarding that is presented below.
 
 Projects Visualization
 ----------------------
@@ -137,7 +141,7 @@ From the Projects menu the user can access to the option of visualizing the curr
 Whenever a Quality Project is selected in the Project Tree, details of that projects are shown. Apart from details like quality value, thresholds or start date, a graph with the trend of its Quality Objectives along the time is presented under the Historic data. In that graph the user can select which Quality Objectives should be shown:
 
 
-<img src="_part23/img/viz_PV.png " width="760" alt="Project Visualization" />
+<img src="viz_PV.png " width="760" alt="Project Visualization" />
 
 
 Dashboard Widgets
@@ -145,7 +149,7 @@ Dashboard Widgets
 The user dashboard has been mainly designed to present central QA related information in an easily digestible format, i.e. visualizations of quality metrics, and different types of reports. This section presents a couple of sample widgets implemented for the platform and what kind of information the user is able to obtain from those. This can be observed in the following figure:
 
 
-<img src="_part23/img/viz_dashboard.png " width="760" alt="Project Visualization: Dashboard with sample Widgets" />
+<img src="viz_dashboard.png " width="760" alt="Project Visualization: Dashboard with sample Widgets" />
 
 
 The figure illustrates a widget visualizing the computed overall project quality value (Project Quality Widget). The dominant graph on the upper part of the widget shows the current value and the plotted line graph illustrates the historical development of the quality within the project so that the user can get a quick overview, whether the quality is improving or getting worse. 
@@ -169,5 +173,5 @@ The enhancement services of U-QASAR are utilized to enhance the data obtained fr
 In the Integrated Platform a set of use cases of enhancement services were implemented: suggestions to make changes to quality objectives, quality indicators and metrics based on the con-text. Also the historical data related to a QA project and the trends detected in the data are used to provide different kinds of suggestions to the user. In addition to those the use of the platform is attempted to be made easier due to the enhancement services, e.g. by providing suggestions for suitable configurations based on the context, e.g. user's role in the project, and assist the user in creating a new QA project or suggest for a suitable dashboard setup for a user.
 
 
-<img src="_part23/img/es_notifications.png " width="760" alt="Enhancement Services: System Suggestions as Notifications" />
+<img src="es_notifications.png " width="760" alt="Enhancement Services: System Suggestions as Notifications" />
 
