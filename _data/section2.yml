@@ -36,6 +36,4 @@ parts:
         - guideline: Expert judgements
           description: >
             Considering the state of the ongoing project with experts (e.g. architects, senior developers, project managers, quality assurance personnel, etc.) results to in­depth understanding about the project. The automated measurement results regarding the quality goals provide a good starting point for such discussions. Conclude what goes well in the project and what needs to be improved. The aim is to create a bridge between the quality goals and the product and process quality.
-    - order: 3
-      bookref: 2.2.3
-      title: How to carry out quality assurance in U-QASAR
+
