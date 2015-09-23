@@ -1,0 +1,25 @@
+bookref: 2.6
+checklist:
+  - item: Get an overview of main functionalities 
+  - item: Get an idea of how quality assurance could be achieved on the U-QASAR platform
+description: >
+  This section introduces the main functionalities of the implemented U-QASAR platform and tries to give insight to the question how quality assurance can be carried out in U-QASAR.  
+parts:
+    - order: 1
+      bookref: 2.6.1
+      title: U-QASAR Graphical User Interface (GUI)
+    - order: 2
+      bookref: 2.6.2
+      title: Quality Model
+    - order: 3
+      bookref: 2.6.3
+      title: Quality Project
+    - order: 4
+      bookref: 2.6.4
+      title: Data Retrieval (Adapters)
+    - order: 5
+      bookref: 2.6.5
+      title: Reporting and Visualization
+    - order: 6
+      bookref: 2.6.6
+      title: Enhancement Services
