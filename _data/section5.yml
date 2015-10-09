@@ -1,32 +1,42 @@
-bookref: 2.4
+bookref: 3.2
 checklist:
-  - item: Consider the evolution of the development domain
-  - item: Reflect the quality management strategy
-  - item: Refine the quality models, indicators, and metrics
+  - item: Identify the differences in the purposes of agile and plan-driven measurement
+  - item: Recognize your agile measurement goals
+  - item: Select the most important agile metrics for your purposes
+  - item: Learn practical guidelines for measuring agile and lean software  development 
 description: >
-  Technological systems with some importance tend to outlive the initial project that created them. Typically, the maturing of software systems is accompanied by revisions to the quality management strategy used to direct the focusing and attention to different quality objectives. Industrial software practice suggests that there are three generic types of quality management strategies: <ul> <li> Maximize customer satisfaction <li> Minimize engineering effort and schedule <li> Minimize defects </ul> Which strategy is active at a particular point in time in a product's life cycle is a management decisions that can be influenced by market pressures, product strategies, portfolio considerations etc. With increasing speed of innovation, and shorter release cycles, product managers may need to postpone qualities such as maintainability and scalability for later. In consequence, a quality management methodology needs to accommodate a potentially evolving strategy for quality management.  
-  <br><br>Quality management is best helped by considering the current software life cycles stage. Depending on its status, from initial development through evolution, servicing, phaseout and closedown stages, the development needs different focus on a set of factors like staff expertise, software architecture and decay and economic factors.
+  Agile methods are inherently empirical – they use metrics (see 
+  <a href="/files/part5/Agile_metrics_classification.pdf">Agile metrics classification</a>) and practices rigorously to achieve a good match between the delivered software and customers' expectations. In Agile mindset, estimating is applied as a way to predict how much the team can get done to guide sprint planning—not as a target that should be achieved as closely as possible. For example, a team's velocity is used in XP to assign a sustainable amount of work to the team and plan the iteration contents accordingly, whereas traditional planning would set the team a productivity goal as given and track team performance against that goal. <p> <p> Agile methods emphasize measuring progress in terms of working software over measuring intermediate work products (documents) and strive for making the measurement simple and immediate. Overall, Agile methods create two types of conflicts to Traditional measurement approaches (see Table - The contrast between agile and traditional measurement programs). First, the traditional approach of tracking progress against a pre-made plan and measurable goals conflicts with the Agile value of embracing the change. Second, the standard quality measurement approaches propose a rather comprehensive set of metrics, which does not align well with the Agile principle of simplicity. <p><p> The following table shows the contrast between agile and traditional measurement programs:<p><img src="The_contrast_between_agile_and_traditional_measurement_programs.png" alt="The contrast between agile and traditional measurement programs" style="width=100%;height:100%;"><p>
 parts:
     - order: 1
-      bookref: 2.4.1
-      title: Evolution of quality models
+      bookref: 3.2.2
+      title: The Purposes of Measuring Agile and Lean Software Development
       guidelines:
-        - guideline: Describe the quality model evolution
+        - guideline: Describe your goals for using metrics in agile
           description: >
-            To understand the evolution of quality models there are two questions we must address: <ul><li>What elements of the quality model are likely to change?<li>What elements of the quality model are likely to endure?</ul>
-        - guideline: Mapping the product life cycle to appropriate measurements
+            Metrics can be used for different purposes in software development and these purposes differ between agile and more traditional measurement programs. 
+        - guideline: Recognize the key metrics of your needs
           description: >
-            There is a need to revise the practical (methodological) level with quality model evolution and explain what are the effects of such evolution on the measurements.
+            The number of the available metrics is extensive. Therefore, you should focus on the most important metrics first, and continue the metrics development after the most important ones are implemented.  
     - order: 2
-      bookref: 2.4.3
-      title: Quality assurance in a continuous deployment environment
+      bookref: 3.2.4
+      title: Instructions on Applying the Measurements in Agile and Lean
       guidelines:
-        - guideline: Fit QA activities into continuous deployment strategy
+        - guideline: Keep focusing on product and process
           description: >
-            Customers are relying less and less on buying versions of software, they buy access to a product that is constantly changing and evolving to meet market demands. The product is no longer produced and sold as set versions with specific release dates – instead the product is constantly changing and evolving to cater for the needs of the users and technical needs. Tactics for testing new features or ideas on a subset of customers has been developed.
-        - guideline: Enforce QA activities at the developer's side
+            In agile and lean context, the metrics are focused on the process and product, but not much on people or individuals. This is due to the agile development principles requiring a capable self-organizing team, the members of which can improve themselves without metrics.
+        - guideline: Do not measure documents
           description: >
-            In the world of continuous deployment, the goal is to reduce time between coding and deploying the code on the production server for actual use by customers. Continuous deployment means that software developers become responsible for deployments and the quality assurance team has not looked at the quality of the already deployed code. The developers are thus responsible for the quality of the code, and this increases pressure on the developers.
-        - guideline: Enable roll-back
+            In agile, documentation is just a tool and part of the feature development instead of an individual deliverable as such.
+        - guideline: Use multiple viewpoints to measure progress 
           description: >
-            Lean startup focuses on using methods like A/B testing, and observing how the groups behave as they are using two versions of the same feature. By trying out new strategies and ideas on a continuous basis, small increments at the time, the idea is to spend as little effort as possible to check if the idea was beneficial or not. If it isn’t, it is simple to roll back to the previous version. By deploying small chunks of code there is also more control over deployment. You don’t deploy many features at the same, so if something goes wrong you stand a better chance to find out what is wrong. 
+            The progress metrics can be combined to a set of metrics to avoid the problems of one-dimensional metrics. Combining burn-down, check-ins per day, number of passing automated tests, and number of new and open defects could give a rather rich understanding of the progress of agile development project from multiple view-points.  
+        - guideline: Do not measure partial completeness 
+          description: >
+            It is a common desire to use the story percent complete metric to indicate the progress in terms of incomplete stories. However, this practice should be applied with caution, since it is somewhat in contradiction with agile principles of tracking progress in terms of running tested features, by definition of done. Measuring the completion percentages of stories under development has a risk of “90% of time 90% completed” syndrome. 
+        - guideline: Do not measure everything 
+          description: >
+            A common way of communicating progress in agile projects is having regular sprint demonstrations which, even though not actual metric, gives a concrete visibility to the actual progress in terms of working code and completed features. 
+        - guideline: Passed tests indicate the progress 
+          description: >
+            It is good to include the testing tasks in the progress metrics to help getting the tests written and testing done early as part of the development work. 

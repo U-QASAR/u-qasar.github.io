@@ -37,9 +37,6 @@ collections:
     part22:
         permalink: /section2/:collection/:title.html
         output: true
-    part23:
-        permalink: /section2/:collection/:title.html
-        output: true    
     part24:
         permalink: /section2/:collection/:title.html
         output: true
@@ -49,7 +46,31 @@ collections:
     part41:
         permalink: /section4/:collection/:title.html
         output: true    
+    part42:
+        permalink: /section4/:collection/:title.html
+        output: true    
     part51:
         permalink: /section5/:collection/:title.html
+        output: true  
+    part52:
+        permalink: /section5/:collection/:title.html
         output: true    
+    part61:
+        permalink: /section6/:collection/:title.html
+        output: true 
+    part62:
+        permalink: /section6/:collection/:title.html
+        output: true  
+    part63:
+        permalink: /section6/:collection/:title.html
+        output: true  
+    part64:
+        permalink: /section6/:collection/:title.html
+        output: true  
+    part65:
+        permalink: /section6/:collection/:title.html
+        output: true  
+    part66:
+        permalink: /section6/:collection/:title.html
+        output: true     
 

@@ -1,7 +1,7 @@
 ---
 type: description
 ---
-Different stakeholders have different concerns. Inviting them to express their concerns and define relevant quality objectives is likely to add to the range of concerns that are relevant for a given project. A Quality Objective Setting Method is a collaborative way of identifying a relevant set of quality objectives and designing a quality model for an organization or project (LINK TO QOS METHOD FLYER).
+Different stakeholders have different concerns. Inviting them to express their concerns and define relevant quality objectives is likely to add to the range of concerns that are relevant for a given project. A Quality Objective Setting Method is a collaborative way of identifying a relevant set of quality objectives and designing a quality model for an organization or project (see <a class="inline flyer-link" href="#The_description_of_the_QOS_method"> description of a QOS method</a>). 
 
 A quality viewpoint represents the key concerns of a particular stakeholder or stakeholder group while the quality objective characterizes the software product or process from some quality viewpoint. Viewpoints are a highly abstract idea that allows us to capture a wide variety of issues, aspects and concerns. Defining the quality viewpoints helps to determine:
 
