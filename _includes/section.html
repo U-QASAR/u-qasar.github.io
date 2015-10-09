@@ -34,18 +34,14 @@
                 <p>
                     {{  part.summary  }}
                 </p>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">Flyers</h4>
-                    </div>
-                    <div class="panel-body">
-                        {% include flyers.html %}
-                    </div>
-                </div>
+                {% include flyers.html %}
+
+                {% assign part_index = part.order | minus: 1 %}
+                {% if section_data.parts[part_index].guidelines %}
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">Guidelines</h4>
-                    </div>
+                    </div>                    
                     <div class="panel-body">
                         <table class="table">
                             <thead>
@@ -54,9 +50,7 @@
                                     <th>Description</th>                               
                                 </tr>
                             </thead>
-                            <tbody>                        
-                                {% assign part_index = part.order | minus: 1 %}
-                                {% if section_data.parts[part_index].guidelines %}
+                            <tbody>
                                 {% assign guidelines = section_data.parts[part_index].guidelines | sort: 'order' %}
                                 {% for guideline in guidelines %}
                                 <tr>
@@ -64,11 +58,11 @@
                                     <td>{{ guideline.description }}</td>
                                 </tr>
                                 {% endfor %}
-                                {% endif %}
                             </tbody>
                         </table>
                     </div>
                 </div>
+                {% endif %}
             </div>
             <div class="well">
                 {% assign descriptions = site.[this_part] | where:'type', 'description' %}
