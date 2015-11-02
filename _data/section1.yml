@@ -5,7 +5,7 @@ checklist:
   - item: Indicators & metrics for quality objectives requires attention
   - item: The measurement program needs to be validated as soon as possible
 description: >
-  TODO ADD Description......This is a description.. #yes, we do.
+  The core of an effective quality control and process improvement is the measurement program, which defines the goals, indicators, and metrics used in the related software projects. This sec-tion introduces how to develop such a program.
 parts:
     - order: 1
       bookref: 2.1.1
