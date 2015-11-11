@@ -20,6 +20,6 @@ As software servicing is discontinued, it enters the phase­out stage. The compa
 
 * Stage 5: Closedown
 
-In the end, users need to be directed to a new version of the product or alternative solutions. It may be important to provide migration solutions. During the closedown stage there may still be contractual obligations and other factors that mean the code cannot be fully phased out. Having now clarified the conceptual ramifications of evolution in quality models and the life cycle of software systems, we will discuss methodological impacts of such evolution.
+In the end, users need to be directed to a new version of the product or alternative solutions. It may be important to provide migration solutions. During the closedown stage there may still be contractual obligations and other factors that mean the code cannot be fully phased out. 
 
 Based on the article "A Staged Model for the Software Life Cycle" by Rajlich and Bennet, 2000
